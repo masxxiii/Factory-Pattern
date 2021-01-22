@@ -1,0 +1,34 @@
+package com.types;
+
+public class SymString implements Data {
+
+    protected String data;
+
+    public SymString(String input) {
+        this.data = input;
+    }
+
+    public String getData() {
+        return this.data;
+    }
+
+    public void setData(String str) {
+        this.data = str;
+    }
+
+    //The following method checks for substring t2 in t1.
+    //If the substring is present then it is removed from t1 and the data t1 is updated
+    public String operator(Data input)
+    {
+        if(this.data.contains(input.getData()))
+        {
+            this.setData(this.data.replace(input.getData(),""));
+            return this.data.replace(input.getData(),"");
+        }
+        else
+        {
+            System.out.println("Substring not found!");
+            return this.data;
+        }
+    }
+}
