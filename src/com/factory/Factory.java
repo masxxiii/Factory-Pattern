@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Factory {
 
-    //Создание объекта
+    //Сreation of objects
     public static Data createType(String input)
     {
         Scanner scan = new Scanner(System.in);
@@ -27,7 +27,7 @@ public class Factory {
         return null;
     }
 
-    //Удаление объекта
+    //Deletion of objects
     public static Data delete()
     {
         return null;
